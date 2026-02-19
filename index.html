@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>English Vocabulary Helper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -11,10 +11,20 @@
 </head>
 <body>
     <div class="container">
-        <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
-        <h1>Lotto Number Generator</h1>
-        <div id="numbers" class="numbers-container"></div>
-        <button id="generate">Generate Numbers</button>
+        <header>
+            <div class="header-top">
+                <h1>English Vocabulary Helper</h1>
+                <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="korean-input" placeholder="Enter a Korean word or phrase...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="note-container">
+                <input type="text" id="user-note" placeholder="Add a personal note or phrase (문구 입력)...">
+            </div>
+        </header>
+        <main id="results-container"></main>
     </div>
     <script src="main.js"></script>
 </body>
